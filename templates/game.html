@@ -5,7 +5,7 @@
       <h1>You chose the letter {{ letter }}, choose another one:</h1>
 
       <form action = "/game" method = "POST">
-         <p>Insert another letter: <input type = "text" name = "letter" /></p>
+         <p>Insert another letter: <input type = "text" name = "letter" pattern="[A-Za-z]" maxlength="1" autofocus/></p>
          <p><input type = "submit" value = "Submit" /></p>
       </form>
 
