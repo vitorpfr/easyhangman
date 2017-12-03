@@ -24,4 +24,4 @@ def game2():
 # final: return render_template('result.html', word = word)
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run('0.0.0.0', 80, debug = True)
