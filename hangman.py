@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 import random
 app = Flask(__name__)
 
-word = list("banana")
+words = ['banana','apple','napkin','subway','outback','pepperoni','cheese','card','spaghetti','bohemian','weather','christmas','garlic']
+word = list(random.choice(words))
 answer = list(len(word)*"_")
 length = str(len(answer))
 
