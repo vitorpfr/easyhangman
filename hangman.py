@@ -16,7 +16,7 @@ def index():
     global gameinprogress
     global selectedletters
     global losecounter
-    words = ['banana','apple','napkin','subway','outback','pepperoni','cheese','card','spaghetti','bohemian','weather','christmas','garlic']
+    words = ['banana','apple','napkin','subway','outback','pepperoni','cheese','card','spaghetti','bohemian','weather','christmas','garlic', 'pizza', 'building', 'mountain', 'scheme', 'christ', 'lake', 'business', 'drumstick']
     word = list(random.choice(words))
     answer = list(len(word)*"_")
     length = str(len(answer))
