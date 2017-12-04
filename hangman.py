@@ -6,7 +6,7 @@ app = Flask(__name__)
 global gameinprogress
 gameinprogress = False
 
-# Game started, variables defined
+# Game started, initial variables defined
 @app.route('/')
 def index():
     global words
@@ -25,7 +25,7 @@ def index():
     gameinprogress = True
     return render_template('index.html', word = "".join(word), answer = "".join(answer), length = length)
 
-# Player selected a letter, check if letter exists in the word
+# Game logic and results
 @app.route('/game',methods = ['POST', 'GET'])
 def game2():
    global gameinprogress

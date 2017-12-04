@@ -1,8 +1,16 @@
 <!doctype html>
 <html>
+  <head>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title> Easy Hangman </title>
+  </head>
    <body>
 
       <h1>Game over! The word was {{ word }}</h1>
+
+      <form action = "/" method = "GET">
+         <p><input type = "submit" value = "Restart" /></p>
+      </form>
 
    </body>
 </html>
